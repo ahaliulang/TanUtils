@@ -23,7 +23,7 @@ interface PlaceDao {
     fun getCityList(provinceId: Int): MutableList<City>
 
     @Query("SELECT * FROM County WHERE cityId = :cityId")
-    fun getCountyList(cityId: Int): MutableList<County>
+    fun getCountryList(cityId: Int): MutableList<County>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun saveProvinceList(provinceList: List<Province>)

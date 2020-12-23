@@ -16,9 +16,7 @@ import timber.log.Timber.DebugTree
 class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
-
         context = this
-
         if (BuildConfig.DEBUG) {
             Timber.plant(DebugTree())
         }
